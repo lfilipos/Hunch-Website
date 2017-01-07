@@ -174,6 +174,10 @@ body{
   animation-duration: 5s;
   animation-delay: .5s;
 }
+nav{
+  background-color: #3a3a3c;
+  opacity: 0.5;
+}
 .hero{
   display: flex;
   align-items: center;
@@ -185,14 +189,19 @@ body{
   flex-direction: column;
   align-items: center;
 }
+.graphics{
+  display: flex;
+}
+.mockup img{
+
+}
+.logo a img{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .subtitle{
   box-shadow: 0px 10px 25px #3a3a3c;
 }
-/*.subtitle{
-  text-align: center;
-  padding-top: 20px;
-  background-color: #ffd02d;
-}*/
 
 .btn{
   background-color: #ffd02d;
