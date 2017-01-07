@@ -1,0 +1,221 @@
+
+@media (min-width:992px){
+  .data-form{
+    width: 40%;
+  }
+  .hero-title{
+    width: 50%;
+  }
+  .ribbon {
+   font-size: 16px !important;
+   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+   /*width: 50%;*/
+
+   position: relative;
+   background: #ffd02d;
+   color: #3A3A3C;
+   text-align: center;
+   padding: 1em 2em; /* Adjust to suit */
+   margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  }
+  .ribbon:before, .ribbon:after {
+   content: "";
+   position: absolute;
+   display: block;
+   bottom: -1em;
+   border: 2em solid #f2ba2f;
+   z-index: -1;
+  }
+  .ribbon:before {
+   left: -2.5em;
+   border-right-width: 1.5em;
+   border-left-color: transparent;
+  }
+  .ribbon:after {
+   right: -2.5em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+  }
+  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+   content: "";
+   position: absolute;
+   display: block;
+   border-style: solid;
+   border-color: #d69d0d transparent transparent transparent;
+   bottom: -1em;
+  }
+  .ribbon .ribbon-content:before {
+   left: 0;
+   border-width: 1em 0 0 1em;
+  }
+  .ribbon .ribbon-content:after {
+   right: 0;
+   border-width: 1em 1em 0 0;
+  }
+}
+@media (min-width:600px) and (max-width:992px){
+  .data-form{
+    width: 60%;
+  }
+  .hero-title{
+    width: 60%;
+  }
+  .ribbon {
+   font-size: 16px !important;
+   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+   /*width: 50%;*/
+
+   position: relative;
+   background: #ffd02d;
+   color: #3A3A3C;
+   text-align: center;
+   padding: 1em 2em; /* Adjust to suit */
+   margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  }
+  .ribbon:before, .ribbon:after {
+   content: "";
+   position: absolute;
+   display: block;
+   bottom: -1em;
+   border: 2em solid #f2ba2f;
+   z-index: -1;
+  }
+  .ribbon:before {
+   left: -2.5em;
+   border-right-width: 1.5em;
+   border-left-color: transparent;
+  }
+  .ribbon:after {
+   right: -2.5em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+  }
+  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+   content: "";
+   position: absolute;
+   display: block;
+   border-style: solid;
+   border-color: #d69d0d transparent transparent transparent;
+   bottom: -1em;
+  }
+  .ribbon .ribbon-content:before {
+   left: 0;
+   border-width: 1em 0 0 1em;
+  }
+  .ribbon .ribbon-content:after {
+   right: 0;
+   border-width: 1em 1em 0 0;
+  }
+}
+@media (max-width:600px){
+  .data-form{
+    width: 80%;
+  }
+  .hero-title{
+    width: 80%;
+  }
+  .ribbon {
+   font-size: 16px !important;
+   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+   /*width: 50%;*/
+
+   position: relative;
+   background: #ffd02d;
+   color: #3A3A3C;
+   text-align: center;
+   padding: 1em 2em; /* Adjust to suit */
+   margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+
+  }
+  .ribbon:before, .ribbon:after {
+   content: "";
+   position: absolute;
+   display: block;
+   bottom: -1em;
+   border: 3em solid #f2ba2f;
+   z-index: -1;
+
+  }
+  .ribbon:before {
+   left: -3.5em;
+   border-right-width: 1.5em;
+   border-left-color: transparent;
+  }
+  .ribbon:after {
+   right: -3.5em;
+   border-left-width: 1.5em;
+   border-right-color: transparent;
+  }
+  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+   content: "";
+   position: absolute;
+   display: block;
+   border-style: solid;
+   border-color: #d69d0d transparent transparent transparent;
+   bottom: -1em;
+  }
+  .ribbon .ribbon-content:before {
+   left: 0;
+   border-width: 1em 0 0 1em;
+  }
+  .ribbon .ribbon-content:after {
+   right: 0;
+   border-width: 1em 1em 0 0;
+  }
+}
+body{
+  background-image: url("/img/word_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation-duration: 5s;
+  animation-delay: .5s;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.hero-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subtitle{
+  box-shadow: 0px 10px 25px #3a3a3c;
+}
+/*.subtitle{
+  text-align: center;
+  padding-top: 20px;
+  background-color: #ffd02d;
+}*/
+
+.btn{
+  background-color: #ffd02d;
+  color: #3A3A3C;
+}
+.btn:hover {
+  background-color: #ffd12f;
+  color: #3A3A3C;
+}
+.input-field input[type=text]:focus + label {
+     color: #ffd02d;
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffd02d;
+    box-shadow: 0 1px 0 0 #ffd02d;
+  }
+.input-field input[type=email]:focus + label {
+       color: #ffd02d;
+}
+.input-field input[type=email]:focus {
+      border-bottom: 1px solid #ffd02d;
+      box-shadow: 0 1px 0 0 #ffd02d;
+}
+.input-field input, select, textarea{
+        color: #ffd02d;
+}

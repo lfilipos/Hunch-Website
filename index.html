@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hunch Live!</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.7.22/css/materialdesignicons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<script>
+  function postContactToGoogle() {
+    var first_name=$('#first_name').val();
+    var last_name=$('#last_name').val();
+    var email=$('#email').val();
+
+    $.ajax({
+      url:"https://docs.google.com/forms/d/e/1FAIpQLSfcIXeFwl0CbchSmtEn6LMgBSt38jLL__5iBwcu-vEzv0-jbw/formResponse",data:
+      {"entry.186915710":first_name,"entry.1971293591":last_name, "entry.1243095665":email},type:"POST", dataType:"xml",statusCode:{0:function() {window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
+    });
+  }
+</script>
+<body class="animated fadeIn">
+  <div class="hero">
+    <div class="hero-title">
+      <div class="logo">
+        <a href="http://hunchlive.com"><img src="/img/hunchlogo.png" /></a>
+      </div>
+      <div class="subtitle ribbon">
+        <span class="ribbon-content">Welcome to Hunch! We're excited to bring you an exciting new game and are currently testing (unfortunately just for iPhone at the moment). If you'd like to become a tester, please fill out the form below and we'll send you an invite.</span>
+      </div>
+    </div>
+    <div class="data-form">
+    <div class="row">
+      <form action="" target="_self" method="POST" id="mG61Hd" class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate " >
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Apple ID Email</label>
+          </div>
+        </div>
+        <div class="row" onclick="postContactToGoogle()">
+          <input class="btn waves-effect col s4 offset-s4"  type="button" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+  <!--Google Analytics-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52959224-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+  <script>$(".button-collapse").sideNav();</script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+</body>
+</html>
