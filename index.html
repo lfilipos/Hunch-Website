@@ -41,8 +41,23 @@
           <img src="/img/mockup2.png" />
         </div>
       </div>
+      <!-- Trigger/Open The Modal -->
+<button id="myBtn" class="btn waves-effect">Watch the Demo</button>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div>
+            <iframe class="demo-video" src="https://www.youtube.com/embed/j5v9c0XKqnc" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
       <div class="ribbon">
-        <span class="ribbon-content">Welcome to Hunch! We're excited to bring you an exciting new game and are currently testing (unfortunately just for iPhone at the moment). If you'd like to become a tester, please fill out the form below and we'll send you an invite.</span>
+        <span class="ribbon-content">Welcome to Hunch! We're thrilled to bring you an exciting new game and are currently testing (unfortunately just for iPhone at the moment). If you'd like to become a tester, please fill out the form below and we'll send you an invite.</span>
       </div>
     </div>
     <div class="data-form">
@@ -83,6 +98,33 @@
   ga('create', 'UA-52959224-2', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 </script>
   <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
